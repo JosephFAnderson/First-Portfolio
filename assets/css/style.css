@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #29a8be;
+    height: 100px;
+    width: 100%;    
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    
+    width: 80%;    
+    font-size: 9vw;
+    margin: 0 2% 0 1%;
+    align-self: center;
+}
+
+#profile{    
+    flex: 0 1 0;
+}
+
+nav{
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    width: 100%;
+    font-size: 4vw;
+    background: #29a8be
+}
+
+nav a{
+    padding: 10px;
+}
+
+h2{
+    font-style: bolder;
+    text-align: center;
+    border-bottom: 5px solid #64657279;
+    width: 100%;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.card{
+    flex: 1 1 40%;
+    margin: 2%;
+    border: 5px solid teal;
+}
+
+#work-1{
+   flex: 1 1 100%;   
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+article p{
+    flex-wrap: wrap;
+}
