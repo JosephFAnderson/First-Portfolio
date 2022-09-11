@@ -12,6 +12,7 @@ header{
 
 body{
     margin: 0;
+    background-color: #685f5f44;
 }
 
 h1{
@@ -42,7 +43,7 @@ nav a{
 h2{
     font-style: bolder;
     text-align: center;
-    border-bottom: 5px solid #64657279;
+    border-bottom: 5px solid #2364db79;
     width: 100%;
 }
 
@@ -70,4 +71,24 @@ article{
 
 article p{
     flex-wrap: wrap;
+}
+
+
+footer{
+    margin-bottom: 2%;    
+}
+
+#contactlist{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#contactlist li{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 3.5vw;
 }
