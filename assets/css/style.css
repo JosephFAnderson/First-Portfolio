@@ -132,4 +132,21 @@ article p{
     nav a{
         border-bottom: 5px solid;
     }
+
+    article{
+        margin: 10px 0 20px;
+    }
+    h2{
+        width: 20%;
+        padding-right: 10px;  
+        margin: 0px;      
+        font-size: 24px;
+        text-align: right;
+        border-bottom: none;
+        border-right: 3px solid #21bdd185;
+    }
+
+    p{
+        width: 74%;
+    }
 }
