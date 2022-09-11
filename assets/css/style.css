@@ -73,22 +73,21 @@ article p{
     flex-wrap: wrap;
 }
 
-
-footer{
-    margin-bottom: 2%;    
-}
-
 #contactlist{
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-items: space-around;
     align-items: center;
-    width: 100%;
 }
 
 #contactlist li{
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 3.5vw;
+}
+
+#contactlist li a{
+    text-decoration: none;
+    color: green;
 }
