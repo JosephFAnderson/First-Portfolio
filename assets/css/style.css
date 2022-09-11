@@ -3,17 +3,17 @@
     color: #153a46d5;
 }
 
+body{
+    margin: 0;
+    background-color: #8080806e;
+}
+
 header{
     display: flex;
     justify-content: space-between;
     background: #000000b6;
     height: 100px;
     width: 100%;    
-}
-
-body{
-    margin: 0;
-    background-color: #8080806e;
 }
 
 h1{
@@ -45,13 +45,25 @@ nav a{
     border-bottom: .5vw solid;
 }
 
+article{
+    display: flex;
+    flex-wrap: wrap;    
+    width: 100%;
+}
+
 h2{
     font-style: bolder;
     text-align: center;
     font-size: 7vw;
     border-bottom: 3px solid #21bdd185;
-    width: 100%;
-    
+    width: 100%;    
+}
+
+article p{
+    font-size: 16pt;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 0 3%;
 }
 
 .projects{
@@ -68,19 +80,6 @@ h2{
 
 #work-1{
    flex: 1 1 100%;   
-}
-
-article{
-    display: flex;
-    flex-wrap: wrap;    
-    width: 100%;
-}
-
-article p{
-    font-size: 16pt;
-    line-height: 1.4;
-    text-align: justify;
-    margin: 0 3%;
 }
 
 #contactlist{
