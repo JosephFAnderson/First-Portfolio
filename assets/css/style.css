@@ -1,25 +1,27 @@
 *{
     box-sizing: border-box;
+    color: #153a46d5;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    background: #29a8be;
+    background: #000000b6;
     height: 100px;
     width: 100%;    
 }
 
 body{
     margin: 0;
-    background-color: #685f5f44;
+    background-color: #8080806e;
 }
 
 h1{
-    
+    background: #21bdd185;
     width: 80%;    
     font-size: 9vw;
-    margin: 0 2% 0 1%;
+    margin-right: 3%;
+    text-align: center;
     align-self: center;
 }
 
@@ -33,18 +35,21 @@ nav{
     justify-content: space-between; 
     width: 100%;
     font-size: 4vw;
-    background: #29a8be
+    background: #000000b6;
 }
 
 nav a{
-    padding: 10px;
+    margin: 10px;
+    color: #21bdd185;
+    text-decoration: none;
+    border-bottom: .5vw solid;
 }
 
 h2{
     font-style: bolder;
     text-align: center;
     font-size: 7vw;
-    border-bottom: 5px solid #2364db79;
+    border-bottom: 3px solid #21bdd185;
     width: 100%;
     
 }
@@ -58,7 +63,7 @@ h2{
 .card{
     flex: 1 1 40%;
     margin: 2%;
-    border: 5px solid teal;
+    border: 3px solid #21bdd185;
 }
 
 #work-1{
@@ -94,5 +99,4 @@ article p{
 
 #contactlist li a{
     text-decoration: none;
-    color: green;
 }
