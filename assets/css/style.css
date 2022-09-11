@@ -99,3 +99,37 @@ article p{
 #contactlist li a{
     text-decoration: none;
 }
+
+@media screen and (min-width: 800px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        background: #000000b6;
+        height: 100px;
+        width: 50%;    
+    }
+    
+    
+    h1{
+        width: 315px;    
+        font-size: 28pt;
+        margin-right: 3%;
+        text-align: center;
+        align-self: center;
+    }
+    
+    nav{
+        justify-content: flex-end; 
+        align-content: flex-end;
+        height: 100px;
+        width: 50%;
+        font-size: 16pt;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    nav a{
+        border-bottom: 5px solid;
+    }
+}
