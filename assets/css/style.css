@@ -66,7 +66,7 @@ article p{
     margin: 0 3%;
 }
 
-.projects{
+.work-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;    
@@ -136,11 +136,12 @@ article p{
     article{
         margin: 10px 0 20px;
     }
+
     h2{
         width: 20%;
         padding-right: 10px;  
         margin: 0px;      
-        font-size: 24px;
+        font-size: 36px;
         text-align: right;
         border-bottom: none;
         border-right: 3px solid #21bdd185;
@@ -148,5 +149,54 @@ article p{
 
     p{
         width: 74%;
+    }
+
+    .projects{
+        display: flex; 
+        flex-wrap: wrap;
+    }        
+
+    #works-link{
+        width: 20%;
+    }
+
+    .work-container{
+        width: 75%;
+        align-content: flex-start;
+        height: min-content;    
+    }     
+
+    #work-1{
+        flex: none; 
+        width: 80%;
+        height: 340px;       
+     }
+
+     .card{
+        flex: none;
+        width: 39.5%;
+        height: 240px;
+        margin: .5%;
+        border: 3px solid #21bdd185;
+    }
+    
+    footer section{
+        display: flex;
+    }
+
+    #contact-me{
+        margin-top: 10px;
+        width: 20%;
+    }
+
+    #contactlist{
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+    
+    #contactlist li{
+        margin: 0 2%;
+        font-size: 18px;
     }
 }
