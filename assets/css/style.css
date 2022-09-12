@@ -19,7 +19,7 @@ header{
 h1{
     background: #21bdd185;
     width: 80%;    
-    font-size: 9vw;
+    font-size: 9vw;    
     margin-right: 3%;
     text-align: center;
     align-self: center;
@@ -62,7 +62,7 @@ h2{
     text-align: center;
     font-size: 7vw;
     border-bottom: 3px solid #21bdd185;
-    width: 100%;    
+    width: 100%;
 }
 
 article p{
@@ -110,6 +110,7 @@ article p{
     margin-top: 2%;
     margin-bottom: 2%;
     font-size: 3.5vw;
+    font-weight: 550;
 }
 
 #contactlist li a{
@@ -127,8 +128,8 @@ article p{
     
     
     h1{
-        width: 315px;    
-        font-size: 28pt;
+        width: 315px;        
+        font-size: 30pt;       
         text-align: center;
         align-self: center;
     }
