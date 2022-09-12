@@ -76,6 +76,25 @@ article p{
     flex: 1 1 40%;
     margin: 2%;
     border: 3px solid #21bdd185;
+    position: relative;
+    background: black;
+}
+
+.card img{
+    opacity: 0.6;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card img:hover{
+    opacity: 1;
+}
+
+.card figcaption{
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    background: #21bdd185;
+    font-size: 14pt;
 }
 
 #work-1{
@@ -147,7 +166,7 @@ article p{
         border-right: 3px solid #21bdd185;
     }
 
-    p{
+    article p{
         width: 74%;
     }
 
