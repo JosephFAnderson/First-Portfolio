@@ -45,6 +45,12 @@ nav a{
     border-bottom: .5vw solid;
 }
 
+#banner{
+    width: 100%;
+    height: 250px;
+    display: none;
+}
+
 article{
     display: flex;
     flex-wrap: wrap;    
@@ -78,15 +84,6 @@ article p{
     border: 3px solid #21bdd185;
     position: relative;
     background: black;
-}
-
-.card img{
-    opacity: 0.6;
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.card img:hover{
-    opacity: 1;
 }
 
 .card figcaption{
@@ -132,7 +129,6 @@ article p{
     h1{
         width: 315px;    
         font-size: 28pt;
-        margin-right: 3%;
         text-align: center;
         align-self: center;
     }
@@ -150,6 +146,10 @@ article p{
 
     nav a{
         border-bottom: 5px solid;
+    }
+
+    #banner{
+        display: block;
     }
 
     article{
@@ -173,6 +173,7 @@ article p{
     .projects{
         display: flex; 
         flex-wrap: wrap;
+        margin: 40px 0px;
     }        
 
     #works-link{
@@ -217,5 +218,16 @@ article p{
     #contactlist li{
         margin: 0 2%;
         font-size: 18px;
+    }
+
+    /* Darken images when not hovered */
+    .card img{
+        opacity: 0.5;
+        transition: opacity 0.1s;
+    }
+    
+    /* Remove darken effect when img hovered */
+    .card img:hover{
+        opacity: 1;
     }
 }
