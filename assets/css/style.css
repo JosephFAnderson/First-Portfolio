@@ -116,8 +116,7 @@ article p{
 }
 
 #contactlist li{
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2% 0;
     font-size: 3.5vw;
     font-weight: 550;
 }
@@ -131,19 +130,13 @@ article p{
     
     /* Provide room to position navbar to the right of header instead of under */
     header{
-        display: flex;
-        justify-content: space-between;
-        background: #000000b6;
-        height: 100px;
         width: 50%;    
     }
     
     
     h1{
         max-width: 370px;        
-        font-size: 30pt;       
-        text-align: center;
-        align-self: center;
+        font-size: 30pt;
     }
     
     /* Position navbar to right space of header */
@@ -193,23 +186,20 @@ article p{
 
     .work-container{
         width: 75%;
-        align-content: flex-start;
-        height: min-content;    
-    }     
-
-    #work-1{
-        flex: none; 
-        width: 80%;
-        height: 340px;       
-     }
-
-     .card{
-        flex: none;
-        width: 39.5%;
+        align-content: flex-start;  
+    }
+    
+    .card{
+        max-width: 39.5%;
         height: 240px;
         margin: .5%;
-        border: 3px solid var(--background);
     }
+
+    /* Set work 1 to 80%  width with fixed height */
+    #work-1{
+        max-width: 80%;
+        height: 340px;       
+     }     
     
     footer section{
         display: flex;
