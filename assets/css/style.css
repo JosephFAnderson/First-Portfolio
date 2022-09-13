@@ -1,6 +1,11 @@
+:root{
+    --background: #21bdd185;
+}
+
 *{
     box-sizing: border-box;
     color: #153a46d5;
+    font-family: serif;
 }
 
 body{
@@ -17,7 +22,7 @@ header{
 }
 
 h1{
-    background: #21bdd185;
+    background: var(--background);
     width: 80%;    
     font-size: 9vw;    
     margin-right: 3%;
@@ -29,6 +34,7 @@ h1{
     flex: 0 1 0;
 }
 
+/* Create navbar */
 nav{
     display:flex; 
     flex-wrap: wrap;
@@ -40,14 +46,15 @@ nav{
 
 nav a{
     margin: 10px;
-    color: #21bdd185;
+    color: var(--background);
     text-decoration: none;
     border-bottom: .5vw solid;
 }
 
+/* Hide banner for smaller screen sizes */
 #banner{
     width: 100%;
-    height: 250px;
+    height: 200px;
     display: none;
 }
 
@@ -61,7 +68,7 @@ h2{
     font-style: bolder;
     text-align: center;
     font-size: 7vw;
-    border-bottom: 3px solid #21bdd185;
+    border-bottom: 3px solid var(--background);
     width: 100%;
 }
 
@@ -78,22 +85,24 @@ article p{
     justify-content: center;    
 }
 
+/* Setup the default container for each work */
 .card{
     flex: 1 1 40%;
     margin: 2%;
-    border: 3px solid #21bdd185;
+    border: 3px solid var(--background);
     position: relative;
     background: black;
 }
 
 .card figcaption{
     position: absolute;
-    left: 0px;
+    left:0px;
     bottom: 10px;
-    background: #21bdd185;
+    background: var(--background);
     font-size: 14pt;
 }
 
+/* Work 1 needs to take up an entire row comepared to Work 2-5 */
 #work-1{
    flex: 1 1 100%;   
 }
@@ -117,7 +126,10 @@ article p{
     text-decoration: none;
 }
 
+/* Change the layout for Tablet / Desktop users */
 @media screen and (min-width: 800px){
+    
+    /* Provide room to position navbar to the right of header instead of under */
     header{
         display: flex;
         justify-content: space-between;
@@ -128,12 +140,13 @@ article p{
     
     
     h1{
-        width: 315px;        
+        max-width: 370px;        
         font-size: 30pt;       
         text-align: center;
         align-self: center;
     }
     
+    /* Position navbar to right space of header */
     nav{
         justify-content: flex-end; 
         align-content: flex-end;
@@ -149,12 +162,13 @@ article p{
         border-bottom: 5px solid;
     }
 
+    /* Cause banner id to be visible */
     #banner{
         display: block;
     }
 
     article{
-        margin: 10px 0 20px;
+        margin-top: 20px;
     }
 
     h2{
@@ -164,7 +178,7 @@ article p{
         font-size: 36px;
         text-align: right;
         border-bottom: none;
-        border-right: 3px solid #21bdd185;
+        border-right: 3px solid var(--background);
     }
 
     article p{
@@ -174,12 +188,8 @@ article p{
     .projects{
         display: flex; 
         flex-wrap: wrap;
-        margin: 40px 0px;
+        margin: 20px 0px;
     }        
-
-    #works-link{
-        width: 20%;
-    }
 
     .work-container{
         width: 75%;
@@ -198,16 +208,11 @@ article p{
         width: 39.5%;
         height: 240px;
         margin: .5%;
-        border: 3px solid #21bdd185;
+        border: 3px solid var(--background);
     }
     
     footer section{
         display: flex;
-    }
-
-    #contact-me{
-        margin-top: 10px;
-        width: 20%;
     }
 
     #contactlist{
@@ -227,7 +232,8 @@ article p{
         transition: opacity 0.1s;
     }
     
-    /* Remove darken effect when img hovered */
+
+    /* Remove darken effect when img hovered. */
     .card img:hover{
         opacity: 1;
     }
